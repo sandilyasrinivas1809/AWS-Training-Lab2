@@ -9,8 +9,8 @@ phases:
   build:
     commands:
       - echo Building the Docker image...
-      - docker build -t sandilya .
-      - docker tag sandilya:latest 864899837235.dkr.ecr.ap-south-1.amazonaws.com/sandilya/myrepo:latest
+      - docker build -t sandilya-website-ecs .
+      - docker tag sandilya-website-ecs:latest 864899837235.dkr.ecr.ap-south-1.amazonaws.com/sandilya/myrepo:latest
 
   post_build:
     commands:
